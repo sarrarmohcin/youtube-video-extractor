@@ -41,7 +41,7 @@ playwright install-deps</code></pre>
   <h2>⚡ Usage</h2>
   <p><strong>Example:</strong></p>
   <pre><code># Run the extractor with a YouTube channel ID
-node index.js --channel UC_x5XG1OV2P6uZZ5FSM9Ttw</code></pre>
+python main.py --channel UC_x5XG1OV2P6uZZ5FSM9Ttw --limit 10</code></pre>
 
   <p>or</p>
   <pre><code>python extractor.py --channel UC_x5XG1OV2P6uZZ5FSM9Ttw</code></pre>
