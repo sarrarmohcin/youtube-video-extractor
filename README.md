@@ -46,8 +46,7 @@ python main.py --channel UC_x5XG1OV2P6uZZ5FSM9Ttw --limit 10</code></pre>
   <ul>
         <li>--channel : YouTube channel ID (required)</li>
         <li>--limit : Limit number of videos (must be > 0, optional)</li>
-
-      </ul>
+  </ul>
 
   <p>This will fetch all videos and print/save their details.</p>
 
