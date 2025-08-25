@@ -50,31 +50,6 @@ python main.py --channel UC_x5XG1OV2P6uZZ5FSM9Ttw --limit 10</code></pre>
 
   <p>This will fetch all videos and print/save their details.</p>
 
-  <h3>Output Example</h3>
-  <pre><code>[
-  {
-    "videoId": "dQw4w9WgXcQ",
-    "title": "Example Video",
-    "description": "This is a sample video description.",
-    "publishedAt": "2023-08-01T12:34:56Z",
-    "duration": "PT12M30S",
-    "views": 120345
-  }
-]</code></pre>
-
-  <h2>🔑 Requirements</h2>
-  <ul>
-    <li>YouTube Data API v3 key</li>
-    <li>Node.js / Python (depending on version of this repo)</li>
-  </ul>
-  <p>You can get an API key from <a href="https://console.cloud.google.com/">Google Cloud Console</a>.</p>
-
-  <h2>🛠️ Configuration</h2>
-  <p>Set your YouTube API key as an environment variable:</p>
-  <pre><code>export YT_API_KEY="your_api_key_here"</code></pre>
-
-  <p>Or place it in a <code>.env</code> file:</p>
-  <pre><code>YT_API_KEY=your_api_key_here</code></pre>
 
   <h2>📜 License</h2>
   <p>This project is licensed under the MIT License.</p>
