@@ -1,46 +1,78 @@
-<div id="top"></div>
-<div align="center">
-  <h1 align="center">Youtube Videos Extractor</h1>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Video Extractor</title>
+</head>
+<body>
+  <h1>YouTube Video Extractor</h1>
 
-Is a simple and functional solution to extract data from Besoccer.com. The program carefully processes the page for each date from the Besoccer website, saving the html content in your computer.
-<br>This program built with the python library <a href="https://playwright.dev/">Playwright</a>.
+  <p>
+    A simple tool that takes a <strong>YouTube Channel ID</strong> and extracts information about all the videos from that channel.
+  </p>
 
-![Logo_besoccer_th](https://github.com/mohcinsarrar/besoccer_scraper/assets/43006742/076b66a2-f767-428e-bdd6-1c0024f130c7)
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>Fetch videos from a YouTube channel by <strong>Channel ID</strong></li>
+    <li>Extract useful video information such as:
+      <ul>
+        <li>Video ID</li>
+        <li>Title</li>
+        <li>Description</li>
+        <li>Published Date</li>
+        <li>Duration</li>
+        <li>View Count (if available)</li>
+      </ul>
+    </li>
+    <li>Output results in a structured format (JSON/CSV, depending on implementation)</li>
+  </ul>
 
-scraping matchs from besoccer.com using python Playwright libray
+  <h2>📦 Installation</h2>
+  <pre><code>git clone https://github.com/your-username/youtube-video-extractor.git
+cd youtube-video-extractor</code></pre>
 
-<!-- GETTING STARTED -->
-## Installation
+  <p>Install dependencies:</p>
+  <pre><code>npm install
+# or
+pip install -r requirements.txt</code></pre>
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/mohcinsarrar/besoccer_scraper.git
-   ```
-2. Install playwright
-   ```sh
-   pip install playwright
-   ```
-3. Set up the Playwright WebKit
-  ```sh
-   playwright install
-   ```
-  ```sh
-   playwright install-deps
-   ```
+  <h2>⚡ Usage</h2>
+  <p><strong>Example:</strong></p>
+  <pre><code># Run the extractor with a YouTube channel ID
+node index.js --channel UC_x5XG1OV2P6uZZ5FSM9Ttw</code></pre>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+  <p>or</p>
+  <pre><code>python extractor.py --channel UC_x5XG1OV2P6uZZ5FSM9Ttw</code></pre>
 
+  <p>This will fetch all videos and print/save their details.</p>
 
-<!-- USAGE EXAMPLES -->
-## Usage
+  <h3>Output Example</h3>
+  <pre><code>[
+  {
+    "videoId": "dQw4w9WgXcQ",
+    "title": "Example Video",
+    "description": "This is a sample video description.",
+    "publishedAt": "2023-08-01T12:34:56Z",
+    "duration": "PT12M30S",
+    "views": 120345
+  }
+]</code></pre>
 
+  <h2>🔑 Requirements</h2>
+  <ul>
+    <li>YouTube Data API v3 key</li>
+    <li>Node.js / Python (depending on version of this repo)</li>
+  </ul>
+  <p>You can get an API key from <a href="https://console.cloud.google.com/">Google Cloud Console</a>.</p>
 
+  <h2>🛠️ Configuration</h2>
+  <p>Set your YouTube API key as an environment variable:</p>
+  <pre><code>export YT_API_KEY="your_api_key_here"</code></pre>
 
-```sh
-   python scraper.py -s 'start date' -e 'end date'
-```
+  <p>Or place it in a <code>.env</code> file:</p>
+  <pre><code>YT_API_KEY=your_api_key_here</code></pre>
 
-you need to specify start ans end dates
-
-the results will be stored to files named date.html in the current folder
+  <h2>📜 License</h2>
+  <p>This project is licensed under the MIT License.</p>
+</body>
+</html>
