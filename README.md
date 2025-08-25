@@ -32,6 +32,12 @@
   <pre><code>
 pip install -r requirements.txt</code></pre>
 
+<p>Install playwright:</p>
+  <pre><code>
+playwright install</code></pre>
+<pre><code>
+playwright install-deps</code></pre>
+
   <h2>⚡ Usage</h2>
   <p><strong>Example:</strong></p>
   <pre><code># Run the extractor with a YouTube channel ID
