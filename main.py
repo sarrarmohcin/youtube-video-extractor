@@ -3,8 +3,7 @@ from videos import YoutubeVideos
 import asyncio
 data = []
 
-channel_id = "UCvyivffb2WwNKonKiLwVAEQ"
-channelExtractor = YoutubeChannel(channel_id)
+channelExtractor = YoutubeChannel(channel_id = "CHANNEL_ID", limit = 10)
 channelExtractor.start()
 videos = channelExtractor.videos
 
