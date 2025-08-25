@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>YouTube Video Extractor</title>
-</head>
 <body>
   <h1>YouTube Video Extractor</h1>
 
   <p>
-    A simple tool that takes a <strong>YouTube Channel ID</strong> and extracts information about all the videos from that channel.
+    A tool that takes a <strong>YouTube Channel ID</strong> and extracts information about all the videos from that channel.
   </p>
 
   <h2>🚀 Features</h2>
@@ -18,10 +14,12 @@
       <ul>
         <li>Video ID</li>
         <li>Title</li>
-        <li>Description</li>
+        <li>Thumbnail</li>
+        <li>Transcript (if available)</li>
         <li>Published Date</li>
         <li>Duration</li>
         <li>View Count (if available)</li>
+        <li>Like Count (if available)</li>
       </ul>
     </li>
     <li>Output results in a structured format (JSON/CSV, depending on implementation)</li>
