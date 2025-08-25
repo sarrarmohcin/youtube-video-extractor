@@ -2,9 +2,10 @@ import feedparser
 from datetime import datetime
 
 class YoutubeChannel:
-    VIDEO_LIMIT = 1
-    def __init__(self, channel_id):
+    
+    def __init__(self, channel_id, limit):
         self.channel_id = channel_id
+        self.limit = limit
         self.videos = None
         
         
@@ -22,7 +23,7 @@ class YoutubeChannel:
                 raise Exception(f"videos not Found")
             
             # limit number of videos
-            self.videos = videos[:self.VIDEO_LIMIT]
+            self.videos = videos[:self.limit]
         
         except Exception as e:
             print(f"Extracting videos from youtube channel failed : {str(e)}")
