@@ -26,8 +26,7 @@
   </ul>
 
   <h2>📦 Installation</h2>
-  <pre><code>git clone https://github.com/your-username/youtube-video-extractor.git
-cd youtube-video-extractor</code></pre>
+  <pre><code>git clone https://github.com/sarrarmohcin/youtube-video-extractor.git</code></pre>
 
   <p>Install dependencies:</p>
   <pre><code>npm install
