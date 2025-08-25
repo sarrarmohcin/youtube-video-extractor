@@ -29,8 +29,7 @@
   <pre><code>git clone https://github.com/sarrarmohcin/youtube-video-extractor.git</code></pre>
 
   <p>Install dependencies:</p>
-  <pre><code>npm install
-# or
+  <pre><code>
 pip install -r requirements.txt</code></pre>
 
   <h2>⚡ Usage</h2>
